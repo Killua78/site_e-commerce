@@ -18,7 +18,7 @@ Créer un site e-commerce simple et fonctionnel permettant :
 - **Backend** : PHP (procédural), MySQL (via PDO)
 - **BDD** : MySQL
 - **Sessions** : gestion avec `$_SESSION`
-- **Outils** : XAMPP/WAMP, PhpMyAdmin
+- **Outils** : XAMPP, PhpMyAdmin
 
 ---
 
