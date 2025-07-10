@@ -75,8 +75,8 @@ Créer un site e-commerce simple et fonctionnel permettant :
 ## 🛠️ Feuille de route
 
 - [x] Cahier des charges
+- [x] Structure des fichiers PHP
 - [ ] Création base de données
-- [ ] Structure des fichiers PHP
 - [ ] Connexion BDD
 - [ ] Accueil : affichage produits
 - [ ] Fiche produit
