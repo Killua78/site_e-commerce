@@ -2,13 +2,21 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8" />
-    <title>Mon site e-commerce</title>
+    <title>Ma boutique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar navbr-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a href="index.php" class="navbar-brand">Ma boutique</a>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.php">Ma Boutique</a>
+        <div class="d-flex">
+            <a href="panier.php" class="btn btn-outline-primary me-2">Panier</a>
+            <a href="login.php" class="btn btn-outline-secondary">Connexion</a>
         </div>
-    </nav>
-    <div class="container my-4">
+    </div>
+</nav>
+
+<div class="container my-4">
