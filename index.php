@@ -10,7 +10,7 @@ $produits = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <h1 class="mb-4">Nos produits</h1>
 <div class="row">
     <?php foreach ($produits as $produit): ?>
-        <div class="col-mb-4 mb-4">
+        <div class="col-md-4 mb-4">
             <div class="card h-100">
                 <img src="assets/images/<?= htmlspecialchars($produit['image']) ?>" alt="<?= htmlspecialchars($produit['nom']) ?>" class="card-img-top">
                 <h5 class="card-title"><?= htmlspecialchars($produit['nom']) ?></h5>
