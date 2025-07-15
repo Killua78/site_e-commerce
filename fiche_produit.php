@@ -18,11 +18,12 @@ $stmt->execute([$id]);
 $produit = $stmt->fetch(PDO::FETCH_ASSOC);
 
 // Vérifier que le produit existe
-if (!$produit) {
+if(!$produit){
     echo "<div class='alert alert-warning'>Produit introuvable.</div>";
-    require_once 'includes/footer.php';
+    require_once "includes/footer.php";
     exit;
 }
+
 ?>
 
 <h1 class="mb-4"><?= htmlspecialchars($produit['nom']) ?></h1>
@@ -34,13 +35,15 @@ if (!$produit) {
     <div class="col-md-6">
         <p><?= nl2br(htmlspecialchars($produit['description'])) ?></p>
         <p class="fw-bold fs-4"><?= number_format($produit['prix'], 2, ',', ' ') ?> €</p>
-        <p><strong>Stock :</strong> <?= (int) $produit['stock'] ?> unités</p>
+        <p><strong>Stock :</strong> <?= (int) $produit['stock']?> unités</p>
 
         <form action="panier.php" method="post" class="mt-3">
-            <input type="hidden" name="id_produit" value="<?= $produit['id'] ?>">
+            <input type="hidden" name="id_produit" value="<?= $produit['id']?>">
             <button type="submit" class="btn btn-success">Ajouter au panier</button>
         </form>
     </div>
 </div>
+
+<!-- input type="hidden" : On cache l’ID du produit dans le formulaire, pour que quand l’utilisateur clique sur “Ajouter au panier”, on sache quel produit il veut ajouter. -->
 
 <?php require_once 'includes/footer.php'; ?>

@@ -13,8 +13,13 @@
     <div class="container">
         <a class="navbar-brand" href="index.php">Ma Boutique</a>
         <div class="d-flex">
-            <a href="panier.php" class="btn btn-outline-primary me-2">Panier</a>
-            <a href="login.php" class="btn btn-outline-secondary">Connexion</a>
+            <?php if(isset($_SESSION['user'])): ?>
+                <a href="logout.php" class="btn btn-outline-danger">Déconnexion</a>
+            <?php else: ?>
+                <a href="register.php" class="btn btn-outline-success me-2">Inscription</a>
+                <a href="login.php" class="btn btn-outline-secondary">Connexion</a>
+            <?php endif; ?>
+                <a href="panier.php" class="btn btn-outline-primary me-2">Panier</a>
         </div>
     </div>
 </nav>
