@@ -76,14 +76,14 @@ Créer un site e-commerce simple et fonctionnel permettant :
 
 - [x] Cahier des charges
 - [x] Structure des fichiers PHP
-- [ ] Création base de données
-- [ ] Connexion BDD
-- [ ] Accueil : affichage produits
-- [ ] Fiche produit
+- [x] Création base de données
+- [x] Connexion BDD
+- [x] Accueil : affichage produits
+- [x] Fiche produit
 - [ ] Panier (session)
 - [ ] Authentification
 - [ ] Validation commande
-- [ ] Admin CRUD produits
+- [x] Admin CRUD produits
 - [ ] Sécurité & nettoyage
 - [ ] Responsive + Filtres
 - [ ] Déploiement
